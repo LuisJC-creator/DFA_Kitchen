@@ -29,7 +29,9 @@ node --test
 | Files | Purpose |
 | --- | --- |
 | `index.html`, `style.css` | Responsive editor, challenge panel, and simulation controls |
-| `app.js` | Editing, state numbering, saved drafts, and animated DFA/NFA playback |
+| `app.js` | Editor state and event wiring: editing, saved drafts, and animated DFA/NFA playback |
+| `dom.js`, `shapes.js`, `geometry.js` | DOM helpers, the SVG for states and arrows, and the curve geometry behind them |
+| `storage.js` | Per-challenge drafts and panel state in `localStorage` |
 | `viewport.js` | Whiteboard panning, zooming, and fit-to-view |
 | `challenges.js`, `references.js` | Twenty challenge definitions and finite reference-machine builders |
 | `automata.js`, `checker.worker.js` | DFA/NFA execution and exact language checking in a worker |
